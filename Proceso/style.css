@@ -1,0 +1,139 @@
+/* Desktop*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Dosis;
+    color: white;
+    background-color: black;
+    
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr 0.5fr;
+    gap: 40px;
+}
+
+header {
+    text-align: center;
+    grid-column: 1/6;
+    grid-row: 1/2;
+    margin-top: 20px;
+}
+
+.rutalogo {
+    width: 40px;
+    border-radius: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2{
+    font-size: 25px;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+#imagenppal {
+    grid-column: 2/5;
+    grid-row: 3/4;
+    display: grid;
+    justify-content:space-around ;
+}
+
+.imagenppal {
+    width: 200vh;
+    border-radius: 20px;
+}
+
+.cuerpoppal {
+    grid-column: 1/6;
+    grid-row: 4/5;
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-areas: 
+    "envio tarjeta contactowsp";
+    border: 1px solid black;
+    justify-items:center ;
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.cuerpoppal #envio{
+    grid-area: envio;
+}
+
+.cuerpoppal #tarjeta {
+    grid-area: tarjeta;
+}
+
+.cuerpoppal #contactowsp {
+    grid-area: contactowsp;
+}
+
+.envios {
+    width: 40px;
+    border-radius: 20px;
+}
+.tarjetas {
+    width: 50px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.wsp {
+    width: 40px;
+    border-radius: 25px;
+}
+
+.menufinal {
+    grid-column: 1/6 ;
+    grid-row: 5/6;
+    display: grid;
+    grid-template-areas: 
+    "atcliente contactanos redes";
+    justify-content: space-evenly;
+}
+
+.menufinal #atcliente{
+    grid-area: atcliente;
+}
+
+.menufinal #contactanos {
+    grid-area: contactanos;
+}
+
+.menufinal #redes {
+    grid-area: redes;
+}
+
+.menufinalh2 {
+    margin-bottom: 15px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+footer {
+    grid-column: 5/6;
+    grid-row:6/7;
+    text-align: end;
+}
+
+/* DESKTOP */
